@@ -6,8 +6,9 @@
       <class name="testScripts.GooglePageTest">
         <methods>
           <include name="setup"/>
+          <include name="javaSearchTest"/>
+          <include name="seleniumSearchTest"/>
           <include name="teardown"/>
-          <include name="appiumSearchTest"/>
         </methods>
       </class> <!-- testScripts.GooglePageTest -->
     </classes>
