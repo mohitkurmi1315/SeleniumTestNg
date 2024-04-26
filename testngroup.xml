@@ -4,10 +4,23 @@
 
 
   <test thread-count="5" name="ModuleOneTest">
-
+<groups>
+  <define name = "SmokeTest">
+     <include name = "featureOne"/>
+     <include name = "featureTwo"/>
+  </define>
+  <define name = "RegressionTest">
+     <include name = "featureOne"/>
+     <include name = "featureTwo"/>
+     <include name = "featureThree"/>
+  </define>
+<run>
+ 	<include name = "SmokeTest"/>
+ 	
+</run>>
+</groups>
     <classes>
-      <class name="testScripts.GooglePageTest"/>
-      <class name="testScripts.LoginTest"/>
+      
       <class name="testScripts.Sample1"/>
       <class name="testScripts.Sample2"/>
     </classes>

@@ -9,16 +9,19 @@ public class sample1 {
 	  long id = Thread.currentThread().getId();
 	  System.out.println("Test11 in sample1...." + id);
   }
+  @Test
 public void testTwo() {
 	  
 	  long id = Thread.currentThread().getId();
 	  System.out.println("Test12 in sample1...." + id);
   }
+  @Test
 public void testThree() {
 	  
 	  long id = Thread.currentThread().getId();
 	  System.out.println("Test13 in sample1...." + id);
 }
+  @Test
 public void testFour() {
 	  
 	  long id = Thread.currentThread().getId();
