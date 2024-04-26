@@ -19,7 +19,7 @@ public class GooglePageTest {
 		driver.manage().window().maximize();
 	}
 	
-  @Test (priority = 1)
+  @Test (alwaysRun = true, dependsOnMethods = "seleniumSearchTest")
   public void javaSearchTest() {
 	    
 		driver.get("https://www.google.com");
@@ -37,7 +37,7 @@ public class GooglePageTest {
 	    WebElement srcbox = driver.findElement(By.id("APjFqb"));
 	    srcbox.sendKeys("Selenium tutorial");
 	    srcbox.sendKeys(Keys.ENTER);
-	    Assert.assertEquals(driver.getTitle(),"Selenium tutorial - Google Search");
+	    Assert.assertEquals(driver.getTitle(),"Selenium tutorial - Google Searchh");
 	    System.out.println(driver.getTitle());
       
 }
