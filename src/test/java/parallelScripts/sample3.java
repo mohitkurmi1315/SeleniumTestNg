@@ -7,24 +7,24 @@ public class sample3 {
   public void testOne() {
 	  
 	  long id = Thread.currentThread().getId();
-	  System.out.println("Test21 in sample3...." + id);
+	  System.out.println("Test31 in sample3...." + id);
   }
   @Test
 public void testTwo() {
 	  
 	  long id = Thread.currentThread().getId();
-	  System.out.println("Test22 in sample3...." + id);
+	  System.out.println("Test32 in sample3...." + id);
   }
   @Test
 public void testThree() {
 	  
 	  long id = Thread.currentThread().getId();
-	  System.out.println("Test23 in sample3...." + id);
+	  System.out.println("Test33 in sample3...." + id);
 }
-  @Test
+  @Test(invocationCount= 6, threadPoolSize= 3, timeOut = 2000)
 public void testFour() {
 	  
 	  long id = Thread.currentThread().getId();
-	  System.out.println("Test24 in sample3...." + id);
+	  System.out.println("Test34 in sample3...." + id);
 }
 }
